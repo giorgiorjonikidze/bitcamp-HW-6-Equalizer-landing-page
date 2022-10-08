@@ -1,0 +1,326 @@
+body {
+  margin: 0;
+  background-image: url(./assets/bg-main-mobile.png);
+  background-position: -4px -253px;
+}
+
+
+.flex {
+  display: flex;
+}
+
+.header-wrapper {
+  padding-left: 24px;
+}
+.header-img {
+  color: #191826;
+  margin-top: 40px;
+  margin-bottom: 64px;
+}
+
+.header2 {
+  font-family: IBM Plex Sans;
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 48px;
+  letter-spacing: -0.4545454680919647px;
+  margin: 0;
+}
+
+.header-p {
+  font-family: IBM Plex Sans;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 26px;
+  letter-spacing: 0px;
+  text-align: left;
+  margin-bottom: 0;
+}
+
+.mobile {
+  position: relative;
+  display: block;
+  width: 209px;
+  margin: 0 auto;
+  margin-top: 68px;
+  z-index: 10;
+}
+
+.mobile-bg-img-wrapper {
+  width: 100vw;
+  background-color: #191826;
+  height: 600px;
+  position: absolute;
+  z-index: -1;
+  top: 600px;
+}
+
+.mobile-bg-img {
+  width: 280px;
+  display: block;
+  margin: 0 auto;
+}
+
+/* card */
+.card {
+  flex-direction: column;
+  background-color: #fa7453;
+  min-width: 375px;
+  width: 100vw;
+  border-radius: 12px;
+  box-sizing: border-box;
+  padding-left: 36px;
+  margin-top: 48px;
+  padding-right: 37px;
+}
+.card-header {
+  font-family: IBM Plex Sans;
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 40px;
+  margin-top: 48px;
+  margin-bottom: 12px;
+  color: #fff;
+}
+
+.card-text {
+  font-family: IBM Plex Sans;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 28px;
+  color: #fff;
+}
+
+.card-price-wrapper {
+  margin-top: 36px;
+  margin-bottom: 32px;
+  align-items: center;
+}
+
+.card-price {
+  font-family: IBM Plex Sans;
+  font-size: 65px;
+  font-weight: 700;
+  line-height: 52px;
+  letter-spacing: 0px;
+  text-align: left;
+  color: #fff;
+}
+
+.card-price-permonth {
+  margin-left: 16px;
+  font-family: IBM Plex Sans;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 32px;
+  letter-spacing: -0.20000000298023224px;
+  text-align: left;
+  color: #fff;
+}
+
+/* buttons  */
+
+.btn-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 61px;
+  width: 296px;
+  border-radius: 12px;
+  border: 0;
+  font-family: IBM Plex Sans;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 32px;
+  letter-spacing: -0.18000000715255737px;
+  text-align: center;
+}
+
+.btn-black {
+  background-color: #191826;
+  color: #fff;
+}
+.btn-black:active {
+  background-color: #66e2dc;
+}
+
+.btn-white {
+  background-color: #fcfaf9;
+  color: #000;
+  margin-top: 16px;
+  margin-bottom: 48px;
+}
+.btn-white:active {
+  background-color: #ffb964;
+}
+.btn span {
+  padding-right: 8px;
+  padding-top: 5px;
+}
+
+/* footer  */
+.footer {
+  margin-top: 60px;
+  margin-bottom: 80px;
+  padding-left: 26px;
+  padding-right: 26px;
+}
+
+.footer-img {
+  color: #191826;
+  margin-bottom: 32px;
+}
+
+.footer-p {
+  font-family: IBM Plex Sans;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 26px;
+  margin: 0;
+}
+.footer-email {
+  font-family: IBM Plex Sans;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 26px;
+  margin: 0;
+}
+
+.footer-icons {
+  margin-top: 64px;
+}
+
+.footer-icons {
+  width: 100px;
+  justify-content: space-between;
+}
+
+.tablet-header-img {
+  display: none;
+  position: absolute;
+  right: 0;
+  top: -27px;
+  width: 267px;
+}
+
+@media only screen and (min-width: 768px) {
+  body {
+    background-image: url(./assets/bg-main-tablet.png);
+    background-position: -350px -150px;
+    background-repeat: no-repeat;
+    padding-left: 39px;
+    padding-right: 39px;
+  }
+  .tablet-header-img {
+    display: inline;
+  }
+
+  .header-wrapper {
+    width: 520px;
+  }
+
+  .header-img {
+    margin-bottom: 95px;
+    margin-top: 62px;
+  }
+  .header2 {
+    max-width: 520px;
+    font-size: 64px;
+    line-height: 64px;
+  }
+  /* mobile  */
+  .mobile-card-wrapper {
+    margin-top: 100px;
+  }
+  .mobile-bg-img-wrapper {
+    max-width: 700px;
+    border-radius: 12px;
+    top: 700px;
+  }
+  .mobile {
+    margin: 0;
+    margin-left: 10%;
+  }
+
+  /* card  */
+  .card {
+    width: 400px;
+    position: absolute;
+    top: 801px;
+    right: 100px;
+    z-index: 11;
+  }
+  .footer {
+    margin-top: 470px;
+    justify-content: space-between;
+  }
+
+  .footer-p {
+    width: 380px;
+  }
+
+  .foote-p-wrapper {
+    display: flex;
+  }
+  .footer-icons img {
+    width: 20px;
+    height: 20px;
+  }
+}
+
+@media only screen and (min-width: 1440px) {
+  body {
+    background-image: url(./assets/bg-main-tablet.png);
+    background-position: 140px -150px;
+    background-repeat: no-repeat;
+    padding-left: 165px;
+    padding-right: 165px;
+  }
+  .header2 {
+    font-family: IBM Plex Sans;
+    font-size: 88px;
+    font-weight: 700;
+    line-height: 88px;
+    letter-spacing: -1px;
+    max-width: 1015px;
+    width: 1015px;
+  }
+  .header-p {
+    font-family: IBM Plex Sans;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 34px;
+    letter-spacing: 0px;
+    text-align: left;
+    width: 825px;
+    max-width: 825px;
+  }
+
+  .mobile-bg-img-wrapper {
+    /* max-width: 1110px;
+    width: 1110px; */
+    min-width: 1110px
+  }
+
+  .card {
+    right: 260px;
+  }
+  .footer-p-wrapper {
+    display: flex;
+  } 
+  .footer {
+    display: flex;
+  }
+  .footer-icons {
+    margin-top: 30px;
+  }
+  .footer-img {
+    margin-right: 140px;
+
+  }
+}
